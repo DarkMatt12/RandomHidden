@@ -1,0 +1,173 @@
+.Caja-Titulo{
+  text-align: center;
+}
+
+.RandomHidden{
+  font-size: 50px;
+  font-weight: 900;
+  font-style: oblique;
+}
+
+
+.Caja-Buscador{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 200px);
+    height: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.Buscador{
+    background-color: lightblue;
+    border: 5px solid blue;
+    border-radius: 15px;
+    width: 70%;
+    font-size: 30px;
+
+
+}
+.Buscador-Enter{
+    background-color: white;
+    border: 5px solid blue;
+    border-radius: 15px;
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+}
+.Buscador-Enter-Texto{
+    font-size: 40px;
+    color: blue;
+}
+.Listado{
+    padding: 0px;
+}
+
+.Objeto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: calc(100% - 200px);
+
+}
+.Objeto__Caja-Nombre{
+    background-color: lightblue;
+    border: 5px solid blue;
+    border-radius: 15px;
+    width: 700px;
+    height: 100px;
+    padding-left: 15px;
+
+
+}
+
+.Objeto__Nombre{
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+.Objeto__Caja-Contador{
+    display: flex;
+    width: 320px;
+
+    border: 0px solid green;
+}
+
+.Objeto__Contador-Resta,
+.Objeto__Contador-Suma,
+.Objeto__Caja-BotónEliminar{
+
+    border-radius: 15px;
+    width: 110px;
+    height: 110px;
+
+}
+
+.Objeto__Contador-Botón,
+.Objeto-BotónEliminar{
+    background-color: white;
+    border: 5px solid blue;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.Objeto-BotónEliminar-Texto{
+    font-size: 40px;
+    color: blue;
+}
+
+.Objeto__Contador-Texto{
+
+        font-size: 40px;
+        color: blue;
+
+}
+
+.Objeto__Cantidad{
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    line-height: 67px;
+}
+.Objeto__Cantidad-Texto{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.Flotar{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    bottom: 15px;
+    left: calc(50% - 150px);
+    z-index:1000;
+
+}
+.Flotar-Botón{
+    background-color: white;
+    border: 5px solid blue;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.Flotar-Botón-Texto{
+    font-size: 40px;
+    color: blue;
+}
+
+.RESULTADO{
+    background-color: blue;
+    display: flex;
+    position: fixed;
+    top:0;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    border: 50px solid blue;
+    z-index:1001;
+}
+.RESULTADO2{
+    background-color: lightblue;
+    border: 1px solid blue;
+    width: 100%;
+    border-radius: 50px;
+
+
+}
+.RESULTADO-CAJA{
+    width: 100%;
+    height: 300px;
+
+
+    text-align: center;
+}
+.RESULTADO-TEXTO{
+    font-size: 200px;
+    font-weight: 900;
+
+}

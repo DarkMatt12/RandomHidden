@@ -1,0 +1,49 @@
+<div class="Caja-Titulo">
+  <h1 class="RandomHidden">RANDOM HIDDEN</h1>
+</div>
+
+<div class="Caja-Buscador">
+    <input placeholder= " ESCRIBIR COSO.."class="Buscador" type="text" [(ngModel)] = "name">
+    <button class="Buscador-Enter" (click)="CrearElemento()"><h1 class="Buscador-Enter-Texto">Nuevo Coso</h1></button>
+</div>
+
+
+<ul class="Listado">
+    <li *ngFor="let item of lista1; let index = index">
+        <div class="Objeto">
+            <div class="Objeto__Caja-Nombre">
+                <h1 class="Objeto__Nombre" >{{item.Nombre}}</h1>
+                <h1 class="Objeto__Nombre" *ngIf="lista1[index].Nombre ===''">XD</h1>
+            </div>
+            <div class="Objeto__Caja-Contador">
+                <div class="Objeto__Contador-Resta">
+                    <button class="Objeto__Contador-Botón" (click)="restapipi(index)"><h1 class="Objeto__Contador-Texto"><</h1></button>
+                </div>
+                <div class="Objeto__Cantidad">
+                    <h1 class="Objeto__Cantidad-Texto">{{item.Cantidad}}</h1>
+                </div>
+                <div class="Objeto__Contador-Suma">
+                    <button class="Objeto__Contador-Botón" (click)="sumapipi(index)"><h1 class="Objeto__Contador-Texto">></h1></button>
+                </div>
+            </div>
+            <div class="Objeto__Caja-BotónEliminar">
+                <button class="Objeto-BotónEliminar" (click)="eliminarpipi(index)"><h1 class="Objeto-BotónEliminar-Texto">X</h1></button>
+            </div>
+        </div>
+    </li>
+</ul>
+<div class="Flotar">
+    <button class="Flotar-Botón"><h1 class="Flotar-Botón-Texto"(click)="mezclar()">MEZCLAR</h1></button>
+</div>
+
+<div [ngClass]="{'RESULTADO' : MOSTRARRESULTADO}"><!--<div [ngClass]="{'RESULTADO' : MOSTRARRESULTADO && turno < lista2.length }">-->
+    <div [ngClass]="{'RESULTADO2' : MOSTRARRESULTADO}"><!--<div [ngClass]="{'RESULTADO2' : MOSTRARRESULTADO && turno < lista2.length  }">-->
+        <div class="RESULTADO-CAJA">
+            <h1 *ngIf="MOSTRARRESULTADO" class="RESULTADO-TURNO">{{turno+1}} / {{lista2.length}}</h1>
+            <h1 *ngIf="MOSTRARRESULTADO" class="RESULTADO-TEXTO">{{lista2[turno]}}</h1><!--<h1 *ngIf="MOSTRARRESULTADO && turno < lista2.length" class="RESULTADO-TEXTO">{{lista2[turno]}}</h1>-->
+        </div>
+        <div class="Flotar" *ngIf="MOSTRARRESULTADO"><button class="Flotar-Botón" (click)="Siguiente()"><h1 class="Flotar-Botón-Texto">SIGUIENTE</h1></button></div><!--<div class="Flotar" *ngIf="MOSTRARRESULTADO && turno < lista2.length"><button class="Flotar-Botón" (click)="Siguiente()"><h1 class="Flotar-Botón-Texto">SIGUIENTE</h1></button></div>-->
+        <div class="Flotar" *ngIf="MOSTRARRESULTADO && turno==(lista2.length-1)"><button class="Flotar-Botón" (click)="Siguiente()"><h1 class="Flotar-Botón-Texto">FINALIZAR</h1></button></div>
+    </div>
+
+</div>
